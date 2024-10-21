@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.meeting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.participant-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 400px;
+}
+
+.participant-video {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.controls {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.chat-box,
+.participants-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 0;
+    width: 300px;
+    background-color: #fff;
+}
+
+.chat-messages {
+    height: 100px;
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.raised {
+    background-color: yellow;
+    color: black;
+}
+
+.chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    /* Scroll when there are many messages */
+}
+
+.chat-messages {
+    margin-bottom: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+    /* Scrollable area for messages */
+}
